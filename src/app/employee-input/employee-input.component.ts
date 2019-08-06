@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-employee-input',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeInputComponent implements OnInit {
 
-  constructor() { }
+  @Input() name: string;
+  @Input() age: number;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
