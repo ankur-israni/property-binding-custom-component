@@ -9,8 +9,14 @@ export class EmployeeInputComponent implements OnInit {
 
   @Input() name: string;
   @Input() age: number;
+  @Input() hireDate: string;
 
   constructor() {
+    setInterval(() => {
+
+      this.hireDate = new Date().toISOString();
+
+    }, 1000);
   }
 
   ngOnInit() {
