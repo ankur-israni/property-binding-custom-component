@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to simple-input!');
+    expect(page.getTitleText()).toEqual('Welcome to property-binding-custom-component!');
   });
 
   afterEach(async () => {

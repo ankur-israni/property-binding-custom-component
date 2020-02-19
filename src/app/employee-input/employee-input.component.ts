@@ -13,9 +13,7 @@ export class EmployeeInputComponent implements OnInit {
 
   constructor() {
     setInterval(() => {
-
       this.hireDate = new Date().toISOString();
-
     }, 1000);
   }
 
